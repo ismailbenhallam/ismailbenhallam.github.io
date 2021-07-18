@@ -11,28 +11,160 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- LinkedIn Badge -->
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      defer
+    ></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Scripts -->
     <script src="js/data.js" defer></script>
     <script src="js/index.js" defer></script>
-    <script src="js/materialize-Initializations.js" defer></script>
+    <script src="js/materialize-initializations.js" defer></script>
   </head>
   <body>
-    <nav>
-      <div class="nav-wrapper blue darken-3">
-        <a href="#" class="brand-logo" style="padding-left: 15px"
-          ><span class="myName"
-        /></a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="badges.html">Expérience</a></li>
-          <li><a href="badges.html">Projets</a></li>
-          <li><a href="badges.html">Certification</a></li>
-          <li><a href="badges.html">CV</a></li>
-          <li><a href="collapsible.html">Contact</a></li>
-        </ul>
+    <!-- HEADER -->
+    <header>
+      <!-- Navbar -->
+      <!-- <div class="navbar-fixed"> -->
+      <nav>
+        <div class="nav-wrapper blue darken-4">
+          <a href="#" class="brand-logo" style="padding-left: 15px"
+            ><span class="myName"
+          /></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <!-- <li><a href="#badges.html">Expérience</a></li> -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">hobbies</a></li>
+            <li><a href="#badges.html">Certification</a></li>
+            <li><a href="#badges.html">CV</a></li>
+            <li><a href="#collapsible.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- </div> -->
+    </header>
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <main>
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="images/photo0.jpg" />
+        </div>
       </div>
-    </nav>
-    <h1><span class="myName" /></h1>
+      <!-- TODO: -->
+      <!-- Hero -->
+      <!-- <div class="white darken-2 center-align">
+        <img
+          src="images/photo2.jpg"
+          alt="Photo"
+          class="z-depth-5"
+          width="350"
+        />
+      </div> -->
+
+      <!-- ABOUT ME -->
+      <div id="about" class="section white row container">
+        <h1><span class="myName" /></h1>
+        <div class="row">
+          <p class="flow-text">
+            I am a software engineer at SQLI & a Java enthusiast
+            <a
+              href="https://www.credly.com/badges/d464bd8b-1a75-4bf0-b04a-dc888ebf4485"
+              target="_blank"
+              >(Oracle Certified Professional: Java SE 11 Developer).</a
+            >
+          </p>
+          <div class="col s6 offset-s8">
+            <img
+              src="images/Oracle_Java_SE_11_Developer.jpg"
+              alt="Oracle Certification"
+              width="350px"
+            />
+          </div>
+          <!-- <div class="center-align">
+            <img src="images/eCertificate.png" alt="Oracle Certification" />
+          </div> -->
+        </div>
+      </div>
+
+      <!-- PROJECT -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <div>
+            <img
+              src="images/Desktop Source Code And Wallpaper By Computer Language With Coding And Programming_ Stock Image - Image of black, developer_ 124934719.jfif"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="section white row container">
+        <h2>Projects</h2>
+        <p class="flow-text red">TODO:</p>
+      </div>
+
+      <!-- ANIMES -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <div>
+            <img src="images/gone.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="section white row container">
+        <h2>Hobbies</h2>
+        <p class="flow-text red">TODO:</p>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer blue darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">
+              You can use rows and columns here to organize your footer content.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          Built with Materialize with &#x2764;
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+
+      <!-- Floating Action Button -->
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" id="toTop" style="display: none"
+          ><i class="large material-icons">arrow_upward</i></a
+        >
+      </div>
+    </footer>
   </body>
 </html>
