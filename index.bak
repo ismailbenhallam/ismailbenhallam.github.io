@@ -1,0 +1,71 @@
+    <!-- MAIN -->
+    <main>
+      <!-- <div class="parallax-container">
+        <div class="parallax">
+          <img src="images/photo0.jpg" />
+        </div>
+      </div> -->
+      <!-- TODO: -->
+      <!-- Hero -->
+      <div
+        class="white darken-2 center-align"
+        style="background-color: #01115c"
+      >
+        <img src="images/photo2.jpg" alt="Photo" width="350" />
+      </div>
+
+      <!-- ABOUT ME -->
+      <div id="about" class="section white row container">
+        <h1><span class="myName" style="color: #757475" /></h1>
+        <div class="row">
+          <p class="flow-text">
+            I am a software engineer at SQLI & a Java enthusiast
+            <a
+              href="https://www.credly.com/badges/d464bd8b-1a75-4bf0-b04a-dc888ebf4485"
+              target="_blank"
+              >(Oracle Certified Professional: Java SE 11 Developer).</a
+            >
+          </p>
+          <div class="col s6 offset-s8">
+            <img
+              src="images/Oracle_Java_SE_11_Developer.jpg"
+              alt="Oracle Certification"
+              width="350px"
+            />
+          </div>
+          <!-- <div class="center-align">
+            <img src="images/eCertificate.png" alt="Oracle Certification" />
+          </div> -->
+        </div>
+      </div>
+
+      <!-- PROJECT -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <div>
+            <img
+              src="images/Desktop Source Code And Wallpaper By Computer Language With Coding And Programming_ Stock Image - Image of black, developer_ 124934719.jfif"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="projects" class="section white container">
+        <h2>Projects</h2>
+        <div id="projects-wrapper" class="row">
+          <!-- Projects added via JS -->
+        </div>
+      </div>
+
+      <!-- ANIMES -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <div>
+            <img src="images/gone.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="section white row container">
+        <h2 id="hobbies">Hobbies</h2>
+        <p class="flow-text red">TODO:</p>
+      </div>
+    </main>

@@ -1,3 +1,17 @@
+nav,
+.page-footer {
+  background-color: #051e34;
+}
+
+nav ul li a,
+nav .myName {
+  color: #cdd2d6;
+}
+
+#toTop {
+  background-color: #cdd2d6;
+}
+
 .profil {
   border-radius: 50%;
   border-style: solid;
@@ -11,4 +25,27 @@
 
 .parallax-container {
   /* height: 800px; */
+}
+
+/************************ PROJECTS **************************/
+.project-title {
+  font-weight: 400 !important;
+}
+
+#projects {
+  background-color: #03498b;
+  color: aliceblue;
+}
+
+.project-card {
+  background-color: #00796b;
+  color: white;
+}
+
+.project-card card-action a {
+  color: #f0f4c3;
+}
+
+.activator {
+  cursor: pointer;
 }

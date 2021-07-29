@@ -28,20 +28,19 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Scripts -->
-    <script src="js/data.js" defer></script>
     <script src="js/index.js" defer></script>
+    <script src="js/data/projects.js" defer></script>
+
+    <script src="js/components/projectsComponent.js" defer></script>
     <script src="js/materialize-initializations.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <!-- Navbar -->
       <!-- <div class="navbar-fixed"> -->
       <nav>
-        <div class="nav-wrapper blue darken-4">
-          <a href="#" class="brand-logo" style="padding-left: 15px"
-            ><span class="myName"
-          /></a>
+        <!-- <div class="nav-wrapper blue darken-4"> -->
+        <div class="nav-wrapper">
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
           >
@@ -61,44 +60,44 @@
 
     <!-- MAIN -->
     <main>
-      <div class="parallax-container">
+      <!-- <div class="parallax-container">
         <div class="parallax">
           <img src="images/photo0.jpg" />
         </div>
-      </div>
+      </div> -->
       <!-- TODO: -->
       <!-- Hero -->
-      <!-- <div class="white darken-2 center-align">
-        <img
-          src="images/photo2.jpg"
-          alt="Photo"
-          class="z-depth-5"
-          width="350"
-        />
-      </div> -->
+      <div style="background-color: #122c44">
+        <!-- ABOUT ME -->
+        <div id="about" class="section row container">
+          <img
+            src="images/photo1.jpg"
+            alt="Photo"
+            width="360"
+            style="float: left; margin-right: 20px; filter: grayscale(1)"
+          />
+          <h1><span class="myName white-text" /></h1>
+          <div class="row">
+            <p class="flow-text white-text right-align">
+              I am a software engineer at SQLI & a Java enthusiast
+              <a
+                href="https://www.credly.com/badges/d464bd8b-1a75-4bf0-b04a-dc888ebf4485"
+                target="_blank"
+                >(Oracle Certified Professional : Java SE 11 Developer).</a
+              >
+            </p>
+            <div style="float: right">
+              <img
+                src="images/Oracle_Java_SE_11_Developer.jpg"
+                alt="Oracle Certification"
+                width="350px"
+              />
+            </div>
 
-      <!-- ABOUT ME -->
-      <div id="about" class="section white row container">
-        <h1><span class="myName" /></h1>
-        <div class="row">
-          <p class="flow-text">
-            I am a software engineer at SQLI & a Java enthusiast
-            <a
-              href="https://www.credly.com/badges/d464bd8b-1a75-4bf0-b04a-dc888ebf4485"
-              target="_blank"
-              >(Oracle Certified Professional: Java SE 11 Developer).</a
-            >
-          </p>
-          <div class="col s6 offset-s8">
-            <img
-              src="images/Oracle_Java_SE_11_Developer.jpg"
-              alt="Oracle Certification"
-              width="350px"
-            />
-          </div>
-          <!-- <div class="center-align">
+            <!-- <div class="center-align">
             <img src="images/eCertificate.png" alt="Oracle Certification" />
           </div> -->
+          </div>
         </div>
       </div>
 
@@ -112,9 +111,13 @@
           </div>
         </div>
       </div>
-      <div class="section white row container">
-        <h2>Projects</h2>
-        <p class="flow-text red">TODO:</p>
+      <div id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div id="projects-wrapper" class="row">
+            <!-- Projects added via JS -->
+          </div>
+        </div>
       </div>
 
       <!-- ANIMES -->
@@ -126,13 +129,13 @@
         </div>
       </div>
       <div class="section white row container">
-        <h2>Hobbies</h2>
+        <h2 id="hobbies">Hobbies</h2>
         <p class="flow-text red">TODO:</p>
       </div>
     </main>
 
     <!-- FOOTER -->
-    <footer class="page-footer blue darken-4">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -161,8 +164,8 @@
 
       <!-- Floating Action Button -->
       <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red" id="toTop" style="display: none"
-          ><i class="large material-icons">arrow_upward</i></a
+        <a class="btn-floating btn-large" id="toTop" style="display: none"
+          ><i class="large material-icons black-text">arrow_upward</i></a
         >
       </div>
     </footer>
