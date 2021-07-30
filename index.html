@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ismaïl BENHALLAM's Portfolio</title>
 
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      defer
+    ></script>
+
     <!-- Materialize -->
     <link
       rel="stylesheet"
@@ -17,22 +23,17 @@
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- LinkedIn Badge -->
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      defer
-    ></script>
-
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
 
     <!-- Scripts -->
     <script src="js/index.js" defer></script>
     <script src="js/data/projects.js" defer></script>
+    <script src="js/data/contact.js" defer></script>
 
     <script src="js/components/projectsComponent.js" defer></script>
-    <script src="js/materialize-initializations.js" defer></script>
+    <script src="js/components/contactComponent.js" defer></script>
+    <script src="js/materialize-Initializations.js" defer></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -50,7 +51,7 @@
             <li><a href="#hobbies">hobbies</a></li>
             <li><a href="#badges.html">Certification</a></li>
             <li><a href="#badges.html">CV</a></li>
-            <li><a href="#collapsible.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -135,30 +136,40 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Footer Content</h5>
-            <p class="grey-text text-lighten-4">
-              You can use rows and columns here to organize your footer content.
-            </p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-            </ul>
-          </div>
+    <footer id="contact" class="page-footer">
+      <div class="container row">
+        <div class="col s12 l6">
+          <h5 class="white-text">Contact</h5>
+        </div>
+        <div class="col s12 row center-align">
+          <ul id="contacts-wrapper" style="font-size: x-large"></ul>
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container">
-          Built with Materialize with &#x2764;
-          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <div
+          class="container"
+          style="color: rgb(149, 157, 165); font-size: large"
+        >
+          Built by Ismaïl with &#x2764;
+          <a
+            class="right valign-wrapper"
+            href="https://github.com/ismailbenhallam/ismailbenhallam.github.io"
+            style="color: rgb(149, 157, 165)"
+            ><img
+              width="27px"
+              src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
+            />&nbsp;Source Code
+          </a>
+
+          <!-- <a
+            class="github-button right valign-wrapper"
+            href="https://github.com/ismailbenhallam/ismailbenhallam.github.io"
+            data-color-scheme="no-preference: light; light: light; dark: dark;"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Source Code"
+            >Source Code</a
+          > -->
         </div>
       </div>
 

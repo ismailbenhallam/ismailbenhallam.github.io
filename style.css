@@ -5,8 +5,16 @@ nav,
 
 nav ul li a,
 nav .myName {
-  color: #cdd2d6;
+  color: #d6d0cd;
 }
+
+.greyColor {
+  color: #d6d0cd;
+}
+
+/* .contact {
+  color: #d6d0cd !important;
+} */
 
 #toTop {
   background-color: #cdd2d6;
