@@ -3,13 +3,12 @@ nav,
   background-color: #051e34;
 }
 
-nav ul li a,
-nav .myName {
+nav ul li a {
   color: #d6d0cd;
 }
 
-.greyColor {
-  color: #d6d0cd;
+#about {
+  margin-bottom: 0 !important;
 }
 
 /* .contact {
@@ -32,7 +31,28 @@ nav .myName {
 }
 
 .parallax-container {
-  /* height: 800px; */
+  height: 800px;
+}
+
+/************************ Scroll Bar **************************/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d6d0cd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /************************ PROJECTS **************************/

@@ -1,24 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".sidenav");
-  var instances = M.Sidenav.init(elems);
-});
+  var elems0 = document.querySelectorAll(".sidenav");
+  var instances0 = M.Sidenav.init(elems0);
 
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".materialboxed");
-  var instances = M.Materialbox.init(elems);
-});
+  $(".dropdown-trigger").dropdown();
 
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".fixed-action-btn");
-  var instances = M.FloatingActionButton.init(elems);
-});
+  var elems1 = document.querySelectorAll(".materialboxed");
+  var instances1 = M.Materialbox.init(elems1);
 
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".sidenav");
-  var instances = M.Sidenav.init(elems);
-});
+  var elems2 = document.querySelectorAll(".fixed-action-btn");
+  var instances2 = M.FloatingActionButton.init(elems2);
 
-document.addEventListener("DOMContentLoaded", function () {
-  var elems = document.querySelectorAll(".parallax");
-  var instances = M.Parallax.init(elems);
+  var elems3 = document.querySelectorAll(".sidenav");
+  var instances3 = M.Sidenav.init(elems3);
+
+  var elems4 = document.querySelectorAll(".parallax");
+  var instances4 = M.Parallax.init(elems4);
 });

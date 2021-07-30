@@ -4,11 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ismaïl BENHALLAM's Portfolio</title>
-
+    <meta name="author" content="Ismaïl BENHALLAM" />
+    <meta name="description" content="Ismaïl BENHALLAM's Portfolio" />
+    <title>Ismaïl BENHALLAM · Portfolio</title>
     <script
       type="text/javascript"
       src="https://platform.linkedin.com/badges/js/profile.js"
+      defer
+    ></script>
+
+    <!-- JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
       defer
     ></script>
 
@@ -21,7 +30,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
@@ -38,24 +50,57 @@
   <body>
     <!-- HEADER -->
     <header>
-      <!-- <div class="navbar-fixed"> -->
-      <nav>
-        <!-- <div class="nav-wrapper blue darken-4"> -->
-        <div class="nav-wrapper">
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="material-icons">menu</i></a
-          >
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <!-- <li><a href="#badges.html">Expérience</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#hobbies">hobbies</a></li>
-            <li><a href="#badges.html">Certification</a></li>
-            <li><a href="#badges.html">CV</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- </div> -->
+      <div class="navbar-fixed">
+        <nav>
+          <!-- <div class="nav-wrapper blue darken-4"> -->
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo" style="margin-left: 20px"
+              >This site is still under construction...</a
+            >
+            <a href="#" data-target="mobile-navbar" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#hobbies">Hobbies</a></li>
+              <li>
+                <a
+                  href="#resume"
+                  class="dropdown-trigger"
+                  href="#!"
+                  data-target="resumes-dropdown"
+                  >Resume<i class="material-icons right">arrow_drop_down</i></a
+                >
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Dropdown Structure -->
+            <ul id="resumes-dropdown" class="dropdown-content black">
+              <li><a href="cv_fr.html">FR</a></li>
+              <li><a href="cv_en.html">EN</a></li>
+            </ul>
+
+            <!-- Mobile navbar -->
+            <ul class="sidenav" id="mobile-navbar">
+              <!-- <li><a href="#badges.html">Expérience</a></li> -->
+              <li><a href="#">Home</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#hobbies">Hobbies</a></li>
+              <li>
+                <a
+                  href="#resume"
+                  class="dropdown-trigger"
+                  href="#!"
+                  data-target="resumes-dropdown"
+                  >Resume<i class="material-icons right">arrow_drop_down</i></a
+                >
+              </li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- END HEADER -->
 
@@ -76,6 +121,7 @@
             alt="Photo"
             width="360"
             style="float: left; margin-right: 20px; filter: grayscale(1)"
+            class="hoverable z-depth-2"
           />
           <h1><span class="myName white-text" /></h1>
           <div class="row">
@@ -106,9 +152,7 @@
       <div class="parallax-container">
         <div class="parallax">
           <div>
-            <img
-              src="images/Desktop Source Code And Wallpaper By Computer Language With Coding And Programming_ Stock Image - Image of black, developer_ 124934719.jfif"
-            />
+            <img src="images/parallax/projects.jpg" />
           </div>
         </div>
       </div>
@@ -121,11 +165,11 @@
         </div>
       </div>
 
-      <!-- ANIMES -->
+      <!-- HOBBIES -->
       <div class="parallax-container">
         <div class="parallax">
           <div>
-            <img src="images/gone.jpg" />
+            <img src="images/parallax/gone.jpg" />
           </div>
         </div>
       </div>
@@ -175,7 +219,7 @@
 
       <!-- Floating Action Button -->
       <div class="fixed-action-btn">
-        <a class="btn-floating btn-large" id="toTop" style="display: none"
+        <a class="btn-floating btn-large scale-transition scale-out" id="toTop"
           ><i class="large material-icons black-text">arrow_upward</i></a
         >
       </div>

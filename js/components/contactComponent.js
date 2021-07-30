@@ -1,8 +1,8 @@
-let wrapper = $("contacts-wrapper");
+let wrapper = $$("contacts-wrapper");
 contacts.forEach((c) => {
   wrapper.insertAdjacentHTML(
     "beforeend",
-    `<li class="col contact">
+    `<li class="col contact ">
               <a
                 href="${c.url}"
                 target="_blank"
