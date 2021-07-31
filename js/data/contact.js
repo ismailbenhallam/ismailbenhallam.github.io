@@ -12,7 +12,7 @@ contacts = [
     url: "https://www.linkedin.com/in/ismailbenhallam/",
   },
   {
-    name: "LinkedIn",
+    name: "Twitter",
     url: "https://twitter.com/ismailbenhallam",
   },
   {

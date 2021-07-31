@@ -28,10 +28,6 @@ nav ul li a {
   margin-bottom: 0 !important;
 }
 
-/* .contact {
-  color: #d6d0cd !important;
-} */
-
 #toTop {
   background-color: #cdd2d6;
 }
@@ -105,7 +101,8 @@ html {
   font-weight: 400 !important;
 }
 
-#projects {
+#projects,
+#hobbies {
   background-color: #17255a;
   color: aliceblue;
 }
