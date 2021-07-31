@@ -51,53 +51,46 @@
     <!-- HEADER -->
     <header>
       <div class="navbar-fixed">
+        <!-- Resume Dropdown -->
+        <ul id="resume-dropdown" class="dropdown-content resume-ul">
+          <li>
+            <a href="cv_fr.html" target="_blank" class="center-align"
+              >FR<i class="material-icons right">open_in_new</i></a
+            >
+          </li>
+          <li>
+            <a href="cv_en.html" target="_blank" class="center-align"
+              >EN<i class="material-icons right">open_in_new</i></a
+            >
+          </li>
+        </ul>
+        <!-- DONT TOUCH THIS! YES I KNOW.. -->
+        <ul id="resume-dropdown" class="dropdown-content"></ul>
         <nav>
-          <!-- <div class="nav-wrapper blue darken-4"> -->
           <div class="nav-wrapper">
             <a href="#!" class="brand-logo" style="margin-left: 20px"
               >This site is still under construction...</a
             >
-            <a href="#" data-target="mobile-navbar" class="sidenav-trigger"
+            <a href="#!" data-target="sidenav-list" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <ul id="nav-list" class="right hide-on-med-and-down">
               <li><a href="#">Home</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#hobbies">Hobbies</a></li>
+              <!-- Resume Dropdown Trigger -->
               <li>
                 <a
-                  href="#resume"
                   class="dropdown-trigger"
                   href="#!"
-                  data-target="resumes-dropdown"
+                  data-target="resume-dropdown"
                   >Resume<i class="material-icons right">arrow_drop_down</i></a
                 >
               </li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-            <!-- Dropdown Structure -->
-            <ul id="resumes-dropdown" class="dropdown-content black">
-              <li><a href="cv_fr.html">FR</a></li>
-              <li><a href="cv_en.html">EN</a></li>
-            </ul>
-
-            <!-- Mobile navbar -->
-            <ul class="sidenav" id="mobile-navbar">
-              <!-- <li><a href="#badges.html">Expérience</a></li> -->
-              <li><a href="#">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#hobbies">Hobbies</a></li>
-              <li>
-                <a
-                  href="#resume"
-                  class="dropdown-trigger"
-                  href="#!"
-                  data-target="resumes-dropdown"
-                  >Resume<i class="material-icons right">arrow_drop_down</i></a
-                >
-              </li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+            <!-- Mobile navbar (Content copied from "nav-list" using JS)-->
+            <ul class="sidenav" id="sidenav-list"></ul>
           </div>
         </nav>
       </div>
@@ -111,16 +104,15 @@
           <img src="images/photo0.jpg" />
         </div>
       </div> -->
-      <!-- TODO: -->
       <!-- Hero -->
       <div style="background-color: #122c44">
         <!-- ABOUT ME -->
         <div id="about" class="section row container">
           <img
+            id="photo"
             src="images/photo1.jpg"
             alt="Photo"
             width="360"
-            style="float: left; margin-right: 20px; filter: grayscale(1)"
             class="hoverable z-depth-2"
           />
           <h1><span class="myName white-text" /></h1>

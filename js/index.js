@@ -8,6 +8,9 @@ for (let item of document.getElementsByClassName("myName")) {
   item.textContent = myName;
 }
 
+// Copy content of "nav-list" to "sidenav-list"
+$$("sidenav-list").innerHTML = $$("nav-list").innerHTML;
+
 // Floating Action Button
 let toTop = $$("toTop");
 toTop.addEventListener("click", () => {

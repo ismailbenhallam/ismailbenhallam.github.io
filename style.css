@@ -7,6 +7,23 @@ nav ul li a {
   color: #d6d0cd;
 }
 
+#photo {
+  float: left;
+  margin-right: 20px;
+  filter: grayscale(1);
+  transition: 0.5s;
+}
+
+#photo:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.resume-ul i {
+  font-size: 1.1rem !important;
+  font-weight: 400;
+}
+
 #about {
   margin-bottom: 0 !important;
 }
@@ -34,7 +51,11 @@ nav ul li a {
   height: 800px;
 }
 
-/************************ Scroll Bar **************************/
+/************************ Scroll **************************/
+html {
+  scroll-behavior: smooth;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -53,6 +74,21 @@ nav ul li a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/************************ RESUME DROPDOWN **************************/
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+  background-color: #0a2f50;
+}
+
+.dropdown-content li > a {
+  color: #d6d0cd;
+}
+
+.dropdown-content li > a:hover {
+  color: #0a2f50;
 }
 
 /************************ PROJECTS **************************/
