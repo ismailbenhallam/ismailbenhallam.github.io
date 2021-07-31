@@ -51,6 +51,11 @@ nav ul li a {
   height: 800px;
 }
 
+/************************ Sections **************************/
+.section {
+  padding-top: 25px;
+}
+
 .section-title {
   color: #eff6e0;
 }
@@ -101,25 +106,21 @@ html {
 }
 
 #projects {
-  background-color: #124559;
+  background-color: #17255a;
   color: aliceblue;
 }
 
 .project-card {
-  background-color: #598392;
+  background-color: #18206f;
   color: white;
 }
 
 .project-card .card-reveal {
-  background-color: #f7faf2;
+  background-color: #f5e2c8;
 }
 
 .project-card .card-action a {
-  color: #d6d0cd !important;
-}
-
-.project-card .card-action {
-  padding-top: 2px !important;
+  color: #d88373 !important;
 }
 
 .project-card .card-action a:hover {
