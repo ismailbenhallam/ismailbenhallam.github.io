@@ -51,6 +51,10 @@ nav ul li a {
   height: 800px;
 }
 
+.section-title {
+  color: #eff6e0;
+}
+
 /************************ Scroll **************************/
 html {
   scroll-behavior: smooth;
@@ -97,17 +101,31 @@ html {
 }
 
 #projects {
-  background-color: #03498b;
+  background-color: #124559;
   color: aliceblue;
 }
 
 .project-card {
-  background-color: #00796b;
+  background-color: #598392;
   color: white;
 }
 
-.project-card card-action a {
-  color: #f0f4c3;
+.project-card .card-reveal {
+  background-color: #f7faf2;
+}
+
+.project-card .card-action a {
+  color: #d6d0cd !important;
+}
+
+.project-card .card-action {
+  padding-top: 2px !important;
+}
+
+.project-card .card-action a:hover {
+  color: #f0f4c3 !important;
+  /* font-weight: 500; */
+  /* font-size: 2rem; */
 }
 
 .activator {

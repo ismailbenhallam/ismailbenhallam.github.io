@@ -3,7 +3,7 @@ projects.forEach((p) => {
   projectsWrapper.insertAdjacentHTML(
     "beforeend",
     `<div class="col s12 m6">
-        <div class="card large project-card hoverable">
+        <div class="card medium project-card hoverable">
             <div class="project-image-wrapper card-image ${
               p.details ? "waves-effect waves-block waves-light" : ""
             }">
