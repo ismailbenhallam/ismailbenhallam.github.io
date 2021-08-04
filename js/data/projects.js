@@ -1,19 +1,12 @@
 projects = [
   {
-    title: "My Profiles Chrome Extension",
-    imageSrc: "images/projects/My-Profiles-Chrome-Extension.png",
-    description:
-      "Chrome extension that will hold your profiles' links (GitHub, LinkedIn...) for quick access.",
-    details:
-      "This extension will hold your profiles' links (GitHub, LinkedIn...) for quick access.<br/>Save the URLs of your profiles in different websites (social networks), to be able to access them in a handy way, with a single click !<br/>Save them once, use them everyday ;)<br/><br/>You can download this extention from <a target='_blank' href='https://chrome.google.com/webstore/detail/my-profiles/cglodpgmmhfodebodfpmhgjpjkglpecf'>Chrome Web Store</a>",
+    title: "Class Diagram Drawer",
+    imageSrc: "images/projects/class-diagram-drawer.png",
+    description: "Class diagram drawer developed using Java and Swing API",
     links: [
       {
-        link: "https://github.com/ismailbenhallam/My-Profiles-Chrome-Extension",
+        link: "https://github.com/ismailbenhallam/class-diagram-drawer",
         title: "GitHub Repo",
-      },
-      {
-        link: "https://chrome.google.com/webstore/detail/my-profiles/cglodpgmmhfodebodfpmhgjpjkglpecf",
-        title: "Get from Chrome Web Store",
       },
     ],
   },
@@ -36,14 +29,31 @@ projects = [
     ],
   },
   {
-    title: "Class Diagram Drawer",
-    imageSrc: "images/projects/class-diagram-drawer.png",
-    description:
-      "Class diagram drawer developed using Java language and Swing API",
+    title: "Resume Generator",
+    imageSrc: "images/projects/resume-generator.png",
+    description: "Resume Generator developed using ReactJs",
     links: [
       {
-        link: "https://github.com/ismailbenhallam/class-diagram-drawer",
+        link: "https://github.com/ismailbenhallam/resume-generator.git",
         title: "GitHub Repo",
+      },
+    ],
+  },
+  {
+    title: "My Profiles Chrome Extension",
+    imageSrc: "images/projects/My-Profiles-Chrome-Extension.png",
+    description:
+      "Chrome extension that will hold your profiles' links (GitHub, LinkedIn...) for quick access.",
+    details:
+      "This extension will hold your profiles' links (GitHub, LinkedIn...) for quick access.<br/>Save the URLs of your profiles in different websites (social networks), to be able to access them in a handy way, with a single click !<br/>Save them once, use them everyday ;)<br/><br/>You can download this extention from <a target='_blank' href='https://chrome.google.com/webstore/detail/my-profiles/cglodpgmmhfodebodfpmhgjpjkglpecf'>Chrome Web Store</a>",
+    links: [
+      {
+        link: "https://github.com/ismailbenhallam/My-Profiles-Chrome-Extension",
+        title: "GitHub Repo",
+      },
+      {
+        link: "https://chrome.google.com/webstore/detail/my-profiles/cglodpgmmhfodebodfpmhgjpjkglpecf",
+        title: "Get from Chrome Web Store",
       },
     ],
   },
