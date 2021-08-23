@@ -66,9 +66,9 @@
         <ul id="resume-dropdown" class="dropdown-content"></ul>
         <nav>
           <div class="nav-wrapper">
-            <span class="brand-logo" style="margin-left: 20px"
-              >This site is still under construction...</span
-            >
+            <!-- <span class="brand-logo" style="margin-left: 20px">
+              <img src="images/photo2.jpg" alt="Photo" height="64px" />
+            </span> -->
             <a href="#!" data-target="sidenav-list" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
@@ -77,6 +77,7 @@
               <li><a href="#projects">Projects</a></li>
               <!-- <li><a href="#hobbies">Hobbies</a></li> -->
               <!-- Resume Dropdown Trigger -->
+              <li><a href="#contact">Contact</a></li>
               <li>
                 <a
                   class="dropdown-trigger"
@@ -85,7 +86,6 @@
                   >Resume<i class="material-icons right">arrow_drop_down</i></a
                 >
               </li>
-              <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- Mobile navbar (Content copied from "nav-list" using JS)-->
             <ul class="sidenav" id="sidenav-list"></ul>
@@ -116,14 +116,21 @@
           <h1><span class="myName white-text" /></h1>
           <div class="row">
             <p class="flow-text white-text right-align">
-              I am a software engineer at SQLI & a Java enthusiast
+              I am a software engineer at
+              <a
+                href="https://www.sqli.com/"
+                target="_blank"
+                style="color: #e82c5c"
+                >SQLI</a
+              >
+              & a Java enthusiast
               <a
                 href="https://www.credly.com/badges/d464bd8b-1a75-4bf0-b04a-dc888ebf4485"
                 target="_blank"
                 >(Oracle Certified Professional : Java SE 11 Developer).</a
               >
             </p>
-            <div style="float: right">
+            <div style="float: right; margin-right: 100px">
               <img
                 src="images/Oracle_Java_SE_11_Developer.jpg"
                 alt="Oracle Certification"
@@ -175,7 +182,7 @@
     <footer id="contact" class="page-footer">
       <div class="container row">
         <div class="col s12 l6">
-          <h5 class="white-text">Contact</h5>
+          <h2 class="white-text">Get in touch</h2>
         </div>
         <div class="col s12 center-align">
           <!-- Contact Wrapper -->
@@ -191,7 +198,13 @@
           class="container"
           style="color: rgb(149, 157, 165); font-size: large"
         >
-          Built by Ismaïl with &#x2764;
+          Made by
+          <a
+            style="text-decoration: inherit; color: inherit; font-weight: bold"
+            href="https://github.com/ismailbenhallam"
+            >@Ismaïl</a
+          >
+          with &#10084;&#65039;
           <a
             class="right valign-wrapper"
             href="https://github.com/ismailbenhallam/ismailbenhallam.github.io"
@@ -207,7 +220,9 @@
       <!-- Floating Action Button -->
       <div class="fixed-action-btn">
         <a class="btn-floating btn-large scale-transition scale-out" id="toTop"
-          ><i class="large material-icons black-text">arrow_upward</i></a
+          ><i class="large material-icons btn-floating-arrow"
+            >arrow_upward</i
+          ></a
         >
       </div>
     </footer>

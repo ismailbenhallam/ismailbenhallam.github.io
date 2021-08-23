@@ -2,7 +2,8 @@ projects = [
   {
     title: "Class Diagram Drawer",
     imageSrc: "images/projects/class-diagram-drawer.png",
-    description: "Class diagram drawer developed using Java and Swing API",
+    description:
+      "Class diagram drawer developed using <code>Java</code> and <code>Swing</code> API",
     links: [
       {
         link: "https://github.com/ismailbenhallam/class-diagram-drawer",
@@ -31,7 +32,8 @@ projects = [
   {
     title: "Resume Generator",
     imageSrc: "images/projects/resume-generator.png",
-    description: "Resume Generator developed using ReactJs",
+    description: `Resume Generator developed using <code>ReactJs</code><br/>`,
+    stillInDev: true,
     links: [
       {
         link: "https://github.com/ismailbenhallam/resume-generator.git",

@@ -7,6 +7,10 @@ nav ul li a {
   color: #d6d0cd;
 }
 
+#nav-list a {
+  font-size: 1.3rem !important;
+}
+
 #photo {
   float: left;
   margin-right: 20px;
@@ -28,8 +32,13 @@ nav ul li a {
   margin-bottom: 0 !important;
 }
 
+/************************ ToTop **************************/
 #toTop {
-  background-color: #cdd2d6;
+  background-color: white;
+}
+.btn-floating-arrow {
+  /* color: rgb(248, 255, 211) !important; */
+  color: black !important;
 }
 
 .profil {
@@ -45,6 +54,44 @@ nav ul li a {
 
 .parallax-container {
   height: 800px;
+}
+
+/************************ Hightlight **************************/
+.highlight-red {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(255, 20, 0, 0.2),
+    rgba(255, 20, 0, 0.7) 95%,
+    rgba(255, 20, 0, 0.1)
+  );
+}
+.highlight-yellow {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(255, 224, 0, 0.2),
+    rgba(255, 224, 0, 0.7) 95%,
+    rgba(255, 224, 0, 0.1)
+  );
+}
+.highlight-green {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(0, 255, 20, 0.2),
+    rgba(0, 255, 20, 0.7) 95%,
+    rgba(0, 255, 20, 0.1)
+  );
+}
+.highlight-blue {
+  border-radius: 1em 0 1em 0;
+  background-image: linear-gradient(
+    -100deg,
+    rgba(0, 20, 255, 0.2),
+    rgba(0, 20, 255, 0.7) 95%,
+    rgba(0, 20, 255, 0.1)
+  );
 }
 
 /************************ Sections **************************/
@@ -113,7 +160,7 @@ html {
 }
 
 .project-card .card-reveal {
-  background-color: #f5e2c8;
+  background-color: #ffffff;
 }
 
 .project-card .card-action a {
@@ -128,4 +175,9 @@ html {
 
 .activator {
   cursor: pointer;
+}
+
+/************************ CONTACT **************************/
+#contacts-wrapper .contact-item {
+  color: #c3d6f4;
 }

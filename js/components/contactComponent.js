@@ -6,7 +6,7 @@ contacts.forEach((c) => {
               <a
                 href="${c.url}"
                 target="_blank"
-                style="color: #f0f4c3"
+                class="contact-item"
                 >${c.name}</a
               >
             </li>`
