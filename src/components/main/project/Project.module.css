@@ -1,0 +1,28 @@
+/************************ PROJECTS **************************/
+.projectTitle {
+  font-weight: 400 !important;
+}
+
+.projectCard {
+  background-color: #18206f;
+  color: white;
+}
+
+.cardReveal {
+  background-color: #ffffff;
+}
+
+.link {
+  color: #d88373 !important;
+  text-transform: none !important;
+}
+
+.link:hover {
+  color: #f0f4c3 !important;
+  /* font-weight: 500; */
+  /* font-size: 2rem; */
+}
+
+.activator {
+  cursor: pointer;
+}

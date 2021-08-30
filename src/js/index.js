@@ -1,15 +1,6 @@
-let myName = "Ismaïl BENHALLAM";
-
-let $$ = (id) => {
+const $$ = (id) => {
   return document.getElementById(id);
 };
-
-for (let item of document.getElementsByClassName("myName")) {
-  item.textContent = myName;
-}
-
-// Copy content of "nav-list" to "sidenav-list"
-$$("sidenav-list").innerHTML = $$("nav-list").innerHTML;
 
 // Floating Action Button
 let toTop = $$("toTop");
@@ -17,6 +8,7 @@ toTop.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   document.body.scrollTop = 0; // For Safari
 });
+
 const HEADER_HEIGHT = 500;
 window.addEventListener("scroll", function () {
   if (

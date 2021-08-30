@@ -1,4 +1,4 @@
-contacts = [
+const contacts = [
   {
     name: "Email",
     url: "mailto:ismailbenh44@gmail.com",
@@ -20,3 +20,5 @@ contacts = [
     url: "https://t.me/ismailbenhallam",
   },
 ];
+
+export default contacts;

@@ -1,4 +1,4 @@
-projects = [
+const projects = [
   {
     title: "Class Diagram Drawer",
     imageSrc: "images/projects/class-diagram-drawer.png",
@@ -60,3 +60,5 @@ projects = [
     ],
   },
 ];
+
+export default projects;
