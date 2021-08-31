@@ -4,7 +4,7 @@ export default function NavbarListElement() {
   return (
     <>
       <li>
-        <a href="#!">Home</a>
+        <a href="#main">Home</a>
       </li>
       <li>
         <a href="#projects">Projects</a>

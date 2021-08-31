@@ -1,11 +1,14 @@
 // import "./Footer.module.css";
 import contacts from "../../data/contact";
+import FloatingActionButton from "./FloatingActionButton";
 
 const CONTACT_ITEM_COLOR = "#c3d6f4";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="page-footer">
+    <footer
+      id="contact"
+      style={{ backgroundColor: "var(--header-footer-background)" }}>
       <div className="container row">
         <div className="col s12 l6">
           <h2 className="white-text">Get in touch</h2>
@@ -16,7 +19,7 @@ export default function Footer() {
             className="row center-align"
             style={{ fontSize: "x-large" }}>
             {contacts.map((c) => (
-              <li className="col">
+              <li key={c.name} className="col">
                 <a
                   href={c.url}
                   style={{ color: CONTACT_ITEM_COLOR }}
@@ -54,7 +57,9 @@ export default function Footer() {
                 color: "inherit",
                 fontWeight: "bold",
               }}
-              href="https://github.com/ismailbenhallam">
+              href="https://github.com/ismailbenhallam"
+              target="_blank"
+              rel="noreferrer">
               @Ismaïl
             </a>
             &nbsp;with &#10084;&#65039;
@@ -62,7 +67,9 @@ export default function Footer() {
           <a
             className="right valign-wrapper"
             href="https://github.com/ismailbenhallam/ismailbenhallam.github.io"
-            style={{ color: "rgb(149, 157, 165)" }}>
+            target="_blank"
+            style={{ color: "rgb(149, 157, 165)" }}
+            rel="noreferrer">
             <img
               width="27px"
               src="https://github.githubassets.com/images/modules/site/icons/footer/github-mark.svg"
@@ -72,18 +79,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-
-      {/* Floating Action Button */}
-      <div className="fixed-action-btn">
-        <a
-          href="!#"
-          className="btn-floating btn-large scale-transition scale-out"
-          id="toTop">
-          <i className="large material-icons btn-floating-arrow">
-            arrow_upward
-          </i>
-        </a>
-      </div>
+      <FloatingActionButton />
     </footer>
   );
 }

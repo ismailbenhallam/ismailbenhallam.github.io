@@ -1,7 +1,7 @@
 const contacts = [
   {
     name: "Email",
-    url: "mailto:ismailbenh44@gmail.com",
+    url: "mailto:ismailben44@gmail.com",
   },
   {
     name: "GitHub",
@@ -18,6 +18,10 @@ const contacts = [
   {
     name: "Telegram",
     url: "https://t.me/ismailbenhallam",
+  },
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/ismail.benhallam/",
   },
 ];
 

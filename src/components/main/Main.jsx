@@ -1,13 +1,13 @@
 // import "./Main.module.css";
 
 import myName from "../../data/global";
-import photo from "../../images/photo1.jpg";
 import certif from "../../images/Oracle_Java_SE_11_Developer.jpg";
+import photo from "../../images/photo1.jpg";
 import Projects from "./projects/Projects";
 
 export default function Main() {
   return (
-    <main>
+    <main id="main">
       {/* <div className="parallax-container">
         <div className="parallax">
           <img src="images/photo0.jpg" />
@@ -25,11 +25,15 @@ export default function Main() {
             alt="Me :)"
           />
           <h1>
-            <span className="white-text">{myName}</span>
+            <span
+              className="white-text"
+              style={{ fontFamily: "'Anurati', sans-serif" }}>
+              {myName}
+            </span>
           </h1>
           <div className="row">
             <p className="flow-text white-text right-align">
-              I am a software engineer at&nbsp;
+              {/* System.out.println(" */}I am a software engineer at&nbsp;
               <a
                 href="https://www.sqli.com/"
                 target="_blank"
@@ -37,7 +41,7 @@ export default function Main() {
                 rel="noreferrer">
                 SQLI
               </a>
-              &nbsp;&amp; a Java enthusiast&nbsp;
+              &nbsp;&amp; a <code>Java</code> enthusiast&nbsp;
               <a
                 href="https://www.credly.com/badges/d464bd8b-1a75-4bf0-b04a-dc888ebf4485"
                 target="_blank"

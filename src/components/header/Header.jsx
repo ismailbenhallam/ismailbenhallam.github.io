@@ -3,12 +3,12 @@ import NavbarListElement from "./NavbarListElement";
 
 export default function Header() {
   return (
-    <header>
+    <header id="header">
       <div className="navbar-fixed">
         {/* Resume Dropdown */}
         <ul id="resume-dropdown" className="dropdown-content resume-ul">
           {resumes.map((r) => (
-            <li>
+            <li key={r.lang}>
               <a
                 href={r.href}
                 target="_blank"
@@ -22,7 +22,7 @@ export default function Header() {
         </ul>
         {/* DONT TOUCH THIS! YES I KNOW.. */}
         <ul id="resume-dropdown" className="dropdown-content"></ul>
-        <nav>
+        <nav style={{ backgroundColor: "var(--header-footer-background)" }}>
           <div className="nav-wrapper">
             {/* <span className="brand-logo" style="margin-left: 20px">
               <img src="images/photo2.jpg" alt="Photo" height="64px" />

@@ -1,3 +1,7 @@
+@import url("http://fonts.cdnfonts.com/css/anurati");
+@import url("http://fonts.cdnfonts.com/css/blanka");
+@import url("http://fonts.cdnfonts.com/css/atlantico");
+
 /* TODO: */
 /* body {
   margin: 0;
@@ -12,9 +16,8 @@ code {
     monospace;
 } */
 
-nav,
-.page-footer {
-  background-color: #051e34;
+:root {
+  --header-footer-background: #051e34;
 }
 
 nav ul li a {

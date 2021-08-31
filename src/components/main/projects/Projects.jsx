@@ -15,9 +15,9 @@ export default function Projects() {
       <div id="projects" className="section">
         <div className="container">
           <h2 className="section-title">Projects</h2>
-          <div id="projects-wrapper" className="row">
+          <div className="row">
             {projects.map((p) => (
-              <Project project={p} />
+              <Project key={p.title} project={p} />
             ))}
           </div>
         </div>

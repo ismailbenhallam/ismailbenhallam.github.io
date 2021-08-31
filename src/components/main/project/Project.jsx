@@ -2,29 +2,34 @@ import React from "react";
 import styles from "./Project.module.css";
 
 export default function Project({ project: p }) {
+  // const image = require("../../../" + p.imageSrc);
+  // let [image, setImage] = useState(null);
+
+  // useEffect(() => {
+  //   import("../../../" + p.imageSrc).then((img) => {
+  //     setImage(img.default);
+  //   });
+  // }, [p.imageSrc]);
+
   return (
     <div className="col s12 m6">
       <div
         className={styles.projectCard + " project-card card large hoverable"}>
         <div
           className={
-            "project-image-wrapper card-image " + p.details
-              ? "waves-effect waves-block waves-light"
-              : ""
+            "project-image-wrapper card-image " +
+            (p.details ? "waves-effect waves-block waves-light" : "")
           }>
           <img
-            src=""
+            src={require("../../../" + p.imageSrc).default}
             alt={p.title}
-            className={p.details ? styles.activator : ""}
+            className={p.details ? styles.activator + " activator" : ""}
           />
           <span
             className={
               styles.projectTitle +
-              ` ` +
-              "card-title black-text darken-text-4 " +
-              p.details
-                ? styles.activator
-                : ``
+              " project-title card-title black-text darken-text-4 " +
+              (p.details ? styles.activator + " activator" : ``)
             }>
             {p.title}
           </span>
@@ -42,20 +47,20 @@ export default function Project({ project: p }) {
           />
         </div>
         {p.details && (
-          <div className={styles.cardReveal}>
+          <div className={styles.cardReveal + " card-reveal"}>
             <span className="card-title grey-text text-darken-4">
-              ${p.title}
+              {p.title}
               <i className="material-icons right">close</i>
             </span>
-            <p className="flow-text black-text">${p.details}</p>
+            <p
+              className="flow-text black-text"
+              dangerouslySetInnerHTML={{ __html: p.details }}></p>
           </div>
         )}
-        <div
-          className={
-            styles.cardAction + " card-action flow-text valign-wrapper"
-          }>
+        <div className="card-action flow-text valign-wrapper">
           {p.links.map((linkObj) => (
             <a
+              key={linkObj.title}
               className={styles.link}
               href={linkObj.link}
               target="_blank"
