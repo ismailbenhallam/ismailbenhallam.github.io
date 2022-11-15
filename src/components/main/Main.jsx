@@ -35,11 +35,11 @@ export default function Main() {
             <p className="flow-text white-text right-align">
               {/* System.out.println(" */}I am a software engineer at&nbsp;
               <a
-                href="https://www.sqli.com/"
+                href="https://ma.linkedin.com/company/imedia24gmbh"
                 target="_blank"
                 style={{ color: "#e82c5c" }}
                 rel="noreferrer">
-                SQLI
+                Imedia24 GmbH
               </a>
               &nbsp;&amp; a <code>Java</code> enthusiast&nbsp;
               <a
