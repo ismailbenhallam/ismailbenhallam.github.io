@@ -15,9 +15,8 @@ projects.forEach((p) => {
             </div>
             <div class="card-content">
                 <p class="flow-text">
-                    ${p.description}
-                    ${
-                      p.stillInDev
+                    ${p.description} <i>(${p.date})</i>
+                    ${p.stillInDev
                         ? `<span class="highlight-red">(Still in development)</span>`
                         : ""
                     }
