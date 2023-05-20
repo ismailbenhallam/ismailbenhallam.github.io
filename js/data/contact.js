@@ -19,4 +19,8 @@ contacts = [
     name: "Telegram",
     url: "https://t.me/ismailbenhallam",
   },
+  {
+    name: "Dev.to",
+    url: "https://dev.to/ismailbenhallam",
+  },
 ];
