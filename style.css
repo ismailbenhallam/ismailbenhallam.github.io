@@ -32,6 +32,26 @@ nav ul li a {
   margin-bottom: 0 !important;
 }
 
+/************************ Animations **************************/
+.rotating {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg);}
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; background-color: white}
+  100% { opacity: 0; background-color: #122c44}
+}
+
+.fadeOut {
+  opacity: 1;
+  animation: fadeOut .5s ease-out;
+}
+
 /************************ ToTop **************************/
 #toTop {
   background-color: white;
