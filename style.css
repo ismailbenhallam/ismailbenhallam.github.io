@@ -14,13 +14,7 @@ nav ul li a {
 #photo {
   float: left;
   margin-right: 20px;
-  filter: grayscale(1);
-  transition: 0.5s;
-}
-
-#photo:hover {
-  filter: grayscale(0);
-  transition: 0.5s;
+  border-radius: 5px;
 }
 
 .resume-ul i {
